@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Project Builder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <main class="app">
+    <section class="hero">
+      <h1>AI Project Builder</h1>
+      <p>Convertí ideas en proyectos organizados.</p>
+    </section>
+
+    <section class="project-form-section">
+      <h2>Crear proyecto</h2>
+
+      <form id="projectForm">
+        <input 
+          type="text" 
+          id="projectName" 
+          placeholder="Nombre del proyecto"
+        >
+
+        <textarea 
+          id="projectDescription" 
+          placeholder="Descripción del proyecto"
+        ></textarea>
+
+        <button type="submit">Guardar proyecto</button>
+      </form>
+    </section>
+
+    <section class="dashboard-section">
+      <h2>Dashboard</h2>
+
+      <div id="dashboard">
+        <p>Total proyectos: 0</p>
+        <p>Total requerimientos: 0</p>
+        <p>Total tareas: 0</p>
+        <p>Tareas pendientes: 0</p>
+        <p>Tareas completadas: 0</p>
+      </div>
+    </section>
+
+    <section class="projects-section">
+      <h2>Mis proyectos</h2>
+      <div id="projectsList"></div>
+    </section>
+
+    <section class="project-detail-section">
+      <h2>Detalle del proyecto</h2>
+      <div id="projectDetail"></div>
+    </section>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
